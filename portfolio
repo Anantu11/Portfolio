@@ -1,0 +1,341 @@
+CTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anantu Pillai's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: rgba(245, 237, 237, 0.968);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(220, 163, 41, 0.811);
+            position: sticky;
+            top: 0px;
+            z-index: 1000;
+            padding: 1rem;
+        }
+
+        nav ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li a{
+            text-decoration: none;
+            color: rgba(23, 20, 20, 0.644);
+            font: bold;
+            font-size: 1.3rem;
+            transition: color 0.8s ease;
+            margin: 0 25px;
+        }
+
+        .left{
+            font-size: 2rem;
+            color: rgb(15, 5, 5);
+        }
+
+        nav li a:hover{
+            color: #ffc107;
+            font-size: 1.4rem;
+            text-decoration: underline #ffc107;
+        }
+
+        nav li a:active{
+            color:rgb(247, 234, 52)
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+        .drop{
+            display: none;
+            position: absolute;
+            background-color:black;
+            min-width: 160px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .dropdown:hover .drop{
+            display: block;
+        }
+
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            align-items: center;
+        }
+        .first > div{
+            width: 30%;
+        }
+
+        .lsection{
+            color: rgb(32, 26, 26);
+            font-size: 2.7rem;
+            font: bold;
+            margin: 80px 0;
+        }
+
+        .rsection img{
+            width: 100%;
+            margin-top: 30px;
+            /* height: 60%; */
+       }
+
+        .yellow{
+            color: #ffc107;
+        }
+        #element{
+            color: #ffc107;
+        }
+
+        button{
+            background-color: #ffc107;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px #dcd8d880;
+            align-items: center;
+        }
+
+        .btn{
+            margin-top: 80px;
+        }
+
+        hr{
+            border: 0;
+            background-color:#ffc107;
+            height: 1.2px;
+            /* margin-top: 50px; */
+            margin: 10px 90px;
+        }
+        .second h1{
+            font-size: 2.5rem;
+            color: #ffc107;
+            text-decoration:#ffc107 underline;
+            margin-top: 30px;
+        }
+
+        .second{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .grey{
+            color: gray;
+        }
+        .second p{
+            color: rgb(23, 21, 21);
+            font-size: 1.2rem;
+            font-style: oblique;
+            /* font-family: 'Courier New', Courier, monospace; */
+            margin-top: 20px;
+        }
+        /* .second span{
+            margin-top: 70px;
+        } */
+        .second .box{
+            background-color: gray;
+            width: 80vw; 
+            height: 2px; 
+            margin: 50px 0;
+            display: flex;
+            margin-top: 50px;
+            
+        }
+        .second .line{
+            height: 93px;
+            width: 1px;
+            background-color: gray;
+            margin: 0 200px;
+            /* justify-content: space-around; */
+        }
+
+        .top-img{
+            width: 25px;
+            position: relative;
+            /* justify-content: space-around; */
+            top: -32px;
+            left: -10px;
+            /* right: 10px; */
+
+        }
+
+        .title{
+            position: relative;
+            top: 75px;
+            width: 100px;
+            color:#ffc107;
+        }
+        .text{
+            position: relative;
+            top: 86px;
+            color: rgb(16, 3, 3);
+            width: 120px;
+            font: 10px;
+        }
+
+        h3{
+            font-size: 1.5rem;
+            color: #ffc107;
+            text-decoration:#ffc107 underline;
+            margin-top: 30px;
+        }
+
+        .skills{
+            width: 500px;
+            margin: 60px auto;
+            color:rgb(14, 12, 12);
+            padding: 20px;
+            box-shadow:0 14px 28px rgba(94, 87, 87, 0.5) ;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .skills li{
+            margin: 20px 0;
+            padding: 10px;
+        }
+        
+        .bar{
+            background: wheat;
+            display: block;
+            height: 20px;
+            border: 1px solid rgb(99, 91, 91);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow:0 14px 28px rgba(109, 104, 104, 0.5) ;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            color: black;
+        }
+        .bar span{
+            height: 20px;
+            float: left;
+            background: linear-gradient(135deg,#21201c);
+        }
+        .python{
+            width: 90%;
+            animation: html 3s;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="left">Anantu Pillai</div>
+        <div class="right">
+            <ul>
+                <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> HOME </a></li>
+                <li><a href="#about"><i class="fa fa-info" aria-hidden="true"></i> ABOUT</a></li>
+                <li class="dropdown"><a href="#">SERVICES</a>
+                    <div class="drop">
+                        <a href="#">WEB DEV</a><br>
+                        <a href="#">CLOUD</a><br>
+                        <a href="#">AI</a><br>
+                        <a href="#">ML</a><br>
+    
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="first" id="home">
+        <div class="lsection">Hello! I am <span class="yellow"> Anantu </span>. 
+            I am a <div><span id="element"></span></div>
+            <div class="btn"><button>Download Resume</button></div>
+            
+        </div>
+        <div class="rsection">
+            <img src="c:\Users\anant\OneDrive\Pictures\anantu1.jpg" alt="">
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section class="second" id="about">
+        <!-- <span class="grey" >Get to know me..</span> -->
+        <H1>ABOUT</H1>
+        <br>
+        <p>Greetings!! I am Anantu Pillai.I am a Student of CSE-AIML at Lakshmi Narain college of Technology.My Education details are as mentioned below.
+        </p>
+        <div class="box">
+            <div class="line">
+                <img src="book.png" alt="" class="top-img">
+                <div class="title">CLASS 10 (2018-2019)</div>
+                <div class="text">I have completed my class 10 from Campion School with a Score of 88.8%.I was among the top 15 students of the School.</div>
+            </div>
+            <div class="line">
+                <img src="book.png" alt="" class="top-img">
+                <div class="title">CLASS 12 (2020-2021)</div>
+                <div class="text">I have completed my class 12 from Campion School with a Score of 87.6%.I was among the top 5 students of the School.</div>
+            </div> 
+            <div class="line">
+                <img src="book.png" alt="" class="top-img">
+                <div class="title">B.Tech (2021-2025)</div>
+                <div class="text">I am currently pursuing my Btech degree in Computer Science with specialization in Artificial Intelligence and Machine Learing with current CGPA of 8.28</div>
+            </div>
+        </div>
+
+    </section>
+    
+    <hr>
+
+    <section class="second" id="about">
+        <!-- <span class="grey" >Get to know me..</span> -->
+        <H1>SKILLS</H1>
+        <br>
+        <p>In the past three years of my engineering journey I have gained a lot of skills to increase my knowledge as well as apply these skills in the field and dive into the vast ocean of Computer Sciences.
+        </p>
+        <p>
+            Some of my valuable skills are as mentioned below:
+        </p>
+    
+        <div class="skills">
+            <li>
+                <h3>Python</h3>
+                <span class="bar"><span class="python"></span></span>
+                <h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+                <h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+                <h3>SQL</h3>
+                <span class="bar"><span class="sql"></span></span>
+            </li>
+
+        </div>
+    </section>
+    
+    
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['CSE-AIML Student.', ' Python Programmer.','Front-End Developer.','and a Learner.'],
+      typeSpeed: 70,
+        });
+      </script>
+</body>
+</html>
+
